@@ -1,5 +1,6 @@
 "# pytorch-unet-master" 
-"# pytorch-unet-master" 
+"# pytorch-unet-master"
+
 # U-Net 矿石图像图像分割
 
 本项目是一个使用 U-Net 网络进行图像分割的示例。U-Net 是一种深度学习网络结构，广泛应用于医学图像分割等任务。
@@ -17,6 +18,16 @@
 ## 数据集
 
 本项目使用了一个自制数据集，用于训练和测试 U-Net 模型。数据集包括输入图像和对应的标签图像，用于图像分割任务。
+
+
+## 使用方法
+准备数据集：将训练和测试数据集分别放置在 data/train 和 data/test 目录下。
+
+模型训练：运行 params/train.py 文件来训练 U-Net 模型。训练过程中会生成模型权重文件，保存在 params/checkpoints 目录下。
+
+模型测试：运行 params/test.py 文件来测试训练好的模型。测试结果将保存在 params/results 目录下。
+
+其他功能：该项目还提供了辅助函数和工具代码，如在 utils 目录下的图像预处理和结果可视化函数。
 
 ## 模型训练
 
